@@ -1,6 +1,8 @@
 #!/bin/bash
 
 PSQL="psql -X --username=freecodecamp --dbname=number_guess --no-align --tuples-only -c"
+echo -e "\n ~~~~~Number Guessing Game~~~~~\n"
+
 SECRET_NUMBER=$(( $RANDOM % 1000 + 1 ))
 
 echo "Enter your username: "
